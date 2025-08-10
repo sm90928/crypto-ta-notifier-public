@@ -20,6 +20,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install pandas numpy requests
       - name: Run notifier
+        working-directory: ./crypto-ta-notifier
         env:
           SYMBOLS: BTCUSDT,ETHUSDT,BNBUSDT,SOLUSDT
           INTERVAL: 1d
